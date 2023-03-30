@@ -4,17 +4,23 @@ using namespace std;
 int main() {
   // int to chars convertion
   // implicit type casting
-  int n = 97; 
-  char ch = n; // implicit type casting from int to char
-  
+  int n, numeric; 
+  char ch, alpha; 
+
+  cout<<"Enter a number\n: ";
+  cin>>n;
+  ch = n; // convert int to char(implicit)
+
+  cout<<"\nyou entered : " <<n<<endl;
+  cout<<"ascii value of "<<n<<" is: "<<ch<<endl;
+
   // chars to int convertion
   // explicit type casting
-  char alpha = 'm'; 
-  int numeric = (int)alpha; // explicit type casting from char to int
-
-  cout<<"value of n : " <<n<<endl;
-  cout<<"value of ch : "<<ch<<endl;
-  cout<<"\nvalue of alpha : "<<alpha<<endl;
-  cout<<"value of numeric: "<<numeric<<endl;
+  cout<<"\nEnter a character\n: ";
+  cin>>alpha;
+  numeric = (int)alpha; // convert char to int(explicit)
+  
+  cout<<"\nyou entered : "<<alpha<<endl;
+  cout<<"integer value of "<<alpha<<" is : "<<numeric<<endl;
   return 0;
 }

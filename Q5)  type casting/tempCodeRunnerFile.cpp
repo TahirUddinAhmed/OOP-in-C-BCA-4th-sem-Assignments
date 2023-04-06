@@ -1,0 +1,1 @@
+umeric = (int)alpha; 
